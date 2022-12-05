@@ -969,7 +969,7 @@ namespace KK5JY.RotorCraft {
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(550, 316);
             this.Name = "MainForm";
-            this.Text = "RotorCraft MARKED";
+            this.Text = "RotorFRL MARKED";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panelControls.ResumeLayout(false);
