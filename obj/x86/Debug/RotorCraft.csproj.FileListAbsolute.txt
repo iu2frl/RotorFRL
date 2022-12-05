@@ -1,0 +1,11 @@
+m:\Downloads\RotorCraft-Src-1.0.4-20150912a\RotorCraft\bin\Debug\AppIcon.ico
+m:\Downloads\RotorCraft-Src-1.0.4-20150912a\RotorCraft\bin\Debug\RotorCraft.exe.config
+m:\Downloads\RotorCraft-Src-1.0.4-20150912a\RotorCraft\bin\Debug\RotorCraft.exe
+m:\Downloads\RotorCraft-Src-1.0.4-20150912a\RotorCraft\bin\Debug\RotorCraft.pdb
+m:\Downloads\RotorCraft-Src-1.0.4-20150912a\RotorCraft\obj\x86\Debug\RotorCraft.csproj.AssemblyReference.cache
+m:\Downloads\RotorCraft-Src-1.0.4-20150912a\RotorCraft\obj\x86\Debug\KK5JY.RotorCraft.MainForm.resources
+m:\Downloads\RotorCraft-Src-1.0.4-20150912a\RotorCraft\obj\x86\Debug\KK5JY.RotorCraft.Properties.Resources.resources
+m:\Downloads\RotorCraft-Src-1.0.4-20150912a\RotorCraft\obj\x86\Debug\RotorCraft.csproj.GenerateResource.cache
+m:\Downloads\RotorCraft-Src-1.0.4-20150912a\RotorCraft\obj\x86\Debug\RotorCraft.csproj.CoreCompileInputs.cache
+m:\Downloads\RotorCraft-Src-1.0.4-20150912a\RotorCraft\obj\x86\Debug\RotorCraft.exe
+m:\Downloads\RotorCraft-Src-1.0.4-20150912a\RotorCraft\obj\x86\Debug\RotorCraft.pdb
