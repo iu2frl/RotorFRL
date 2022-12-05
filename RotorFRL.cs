@@ -748,6 +748,11 @@ namespace KK5JY.RotorCraft {
 		private void OnTopCheckChanged(object sender, EventArgs e) {
 			this.TopMost = cbOnTop.Checked;
 		}
-		#endregion
-	}
+        #endregion
+
+        private void m_Dial_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
