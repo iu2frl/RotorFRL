@@ -35,9 +35,9 @@ namespace KK5JY.RotorCraft {
 	/// Platform and release-specific fields.
 	/// </summary>
 	public static class Platform {
-		public const string ProductName = "RotorCraft";
-		public const string VersionNumberString = "1.0";
-		public const string ReleaseNumberString = "20150912a";
+		public const string ProductName = "RotorFRL";
+		public const string VersionNumberString = "2.0";
+		public const string ReleaseNumberString = "20221205a";
 		public static readonly string VersionString;
 
 		static Platform() {

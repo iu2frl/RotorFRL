@@ -179,17 +179,17 @@ namespace KK5JY.RotorCraft {
 			m_NotifyIcon = new NotifyIcon(this.components);
 			m_NotifyIcon.Icon = new Icon("AppIcon.ico", new Size(16, 16));
 			m_NotifyIcon.ContextMenu = m_TaskbarIconContextMenu;
-			m_NotifyIcon.Text = "RotorCraft";
+			m_NotifyIcon.Text = "RotorFRL";
 			m_NotifyIcon.Visible = true;
 			m_NotifyIcon.DoubleClick += new EventHandler(NotifyIconDoubleClick);
 			m_NotifyIcon.Text = "Azimuth: 0\u00B0";
-			m_NotifyIcon.BalloonTipTitle = "RotorCraft";
+			m_NotifyIcon.BalloonTipTitle = "RotorFRL";
 			m_NotifyIcon.BalloonTipText = m_NotifyIcon.Text;
 
 			this.TopMost = false;
 
 			tbAbout.Text = "\r\n" + Platform.VersionString + "\r\n";
-			tbAbout.Text += "\r\nCopyright (C) 2014-2015 by Matt Roberts, KK5JY.\r\n";
+			tbAbout.Text += "\r\nCopyright (C) 2022 by IU2FRL \r\n Original project by Matt Roberts, KK5JY.\r\n";
 			tbAbout.Text += "All rights reserved.\r\n";
 			tbAbout.Text += "\r\nLicense: GNU GPL 3.0\r\n";
 			tbAbout.Text += "www.gnu.org\r\n";
@@ -751,6 +751,11 @@ namespace KK5JY.RotorCraft {
         #endregion
 
         private void m_Dial_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
         {
 
         }

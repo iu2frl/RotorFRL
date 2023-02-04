@@ -80,8 +80,13 @@ namespace KK5JY.RotorCraft {
             this.bStop = new System.Windows.Forms.Button();
             this.bCW = new System.Windows.Forms.Button();
             this.bCCW = new System.Windows.Forms.Button();
+            this.m_Dial = new KK5JY.RotorCraft.RotorDial();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbOnTop = new System.Windows.Forms.CheckBox();
             this.cbShowTrayIcon = new System.Windows.Forms.CheckBox();
@@ -104,12 +109,12 @@ namespace KK5JY.RotorCraft {
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tbAbout = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pbMap1 = new System.Windows.Forms.PictureBox();
-            this.m_Dial = new KK5JY.RotorCraft.RotorDial();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panelControls.SuspendLayout();
@@ -124,14 +129,15 @@ namespace KK5JY.RotorCraft {
             ((System.ComponentModel.ISupportInitialize)(this.numPreset5)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numPollDelay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSmoothing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPollTimeout)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMap1)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -631,6 +637,23 @@ namespace KK5JY.RotorCraft {
             this.bCCW.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RotateMouseDown);
             this.bCCW.MouseUp += new System.Windows.Forms.MouseEventHandler(this.RotateMouseUp);
             // 
+            // m_Dial
+            // 
+            this.m_Dial.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.m_Dial.Location = new System.Drawing.Point(3, 3);
+            this.m_Dial.Name = "m_Dial";
+            this.m_Dial.Position = 0F;
+            this.m_Dial.PositionFont = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_Dial.PresetFont = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_Dial.Size = new System.Drawing.Size(257, 257);
+            this.m_Dial.TabIndex = 0;
+            this.m_Dial.TabStop = false;
+            this.m_Dial.UseTextDropShadow = true;
+            this.m_Dial.PresetSelected += new System.EventHandler<KK5JY.RotorCraft.PresetEventArgs>(this.DialPresetSelected);
+            this.m_Dial.Load += new System.EventHandler(this.m_Dial_Load);
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.panel1);
@@ -652,6 +675,47 @@ namespace KK5JY.RotorCraft {
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(528, 257);
             this.panel1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Location = new System.Drawing.Point(266, 6);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(259, 246);
+            this.panel3.TabIndex = 17;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(154, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(94, 15);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "(6 chars only)";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(48, 5);
+            this.textBox1.MaxLength = 6;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 16;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(3, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(39, 15);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "QTH:";
             // 
             // panel2
             // 
@@ -945,83 +1009,74 @@ namespace KK5JY.RotorCraft {
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.pbMap1);
+            this.tabPage4.Controls.Add(this.panel5);
+            this.tabPage4.Controls.Add(this.panel4);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(534, 263);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Map View";
+            this.tabPage4.Text = "Calibrate";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // panel5
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Location = new System.Drawing.Point(266, 6);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(259, 246);
-            this.panel3.TabIndex = 17;
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.Controls.Add(this.label13);
+            this.panel5.Location = new System.Drawing.Point(276, 6);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(252, 251);
+            this.panel5.TabIndex = 1;
             // 
-            // label9
+            // label14
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(39, 15);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "QTH:";
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(3, 34);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(246, 31);
+            this.label14.TabIndex = 19;
+            this.label14.Text = "Current position";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
-            // textBox1
+            // label13
             // 
-            this.textBox1.Location = new System.Drawing.Point(48, 5);
-            this.textBox1.MaxLength = 6;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 16;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(3, 9);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(246, 15);
+            this.label13.TabIndex = 18;
+            this.label13.Text = "Current position";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label10
+            // panel4
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(154, 9);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(94, 15);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "(6 chars only)";
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Location = new System.Drawing.Point(8, 6);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(262, 251);
+            this.panel4.TabIndex = 0;
             // 
-            // pbMap1
+            // label12
             // 
-            this.pbMap1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbMap1.Image = ((System.Drawing.Image)(resources.GetObject("pbMap1.Image")));
-            this.pbMap1.InitialImage = null;
-            this.pbMap1.Location = new System.Drawing.Point(3, 3);
-            this.pbMap1.Name = "pbMap1";
-            this.pbMap1.Size = new System.Drawing.Size(528, 257);
-            this.pbMap1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMap1.TabIndex = 0;
-            this.pbMap1.TabStop = false;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(3, 34);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(172, 15);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "2. Press \"Calibrate ZERO\"";
             // 
-            // m_Dial
+            // label11
             // 
-            this.m_Dial.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_Dial.Location = new System.Drawing.Point(3, 3);
-            this.m_Dial.Name = "m_Dial";
-            this.m_Dial.Position = 0F;
-            this.m_Dial.PositionFont = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_Dial.PresetFont = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_Dial.Size = new System.Drawing.Size(257, 257);
-            this.m_Dial.TabIndex = 0;
-            this.m_Dial.TabStop = false;
-            this.m_Dial.UseTextDropShadow = true;
-            this.m_Dial.PresetSelected += new System.EventHandler<KK5JY.RotorCraft.PresetEventArgs>(this.DialPresetSelected);
-            this.m_Dial.Load += new System.EventHandler(this.m_Dial_Load);
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(3, 9);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(166, 15);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "1. Turn rotator CCW to 0°";
             // 
             // MainForm
             // 
@@ -1049,6 +1104,8 @@ namespace KK5JY.RotorCraft {
             ((System.ComponentModel.ISupportInitialize)(this.numPreset5)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numPollDelay)).EndInit();
@@ -1057,9 +1114,9 @@ namespace KK5JY.RotorCraft {
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMap1)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
 		}
@@ -1126,7 +1183,12 @@ namespace KK5JY.RotorCraft {
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pbMap1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
     }
 }
 
